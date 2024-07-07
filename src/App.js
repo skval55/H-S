@@ -1,8 +1,6 @@
-import Nav from './nav';
-import Header from './header';
 import Page from './page'
 import OurStory from './ourStory';
-import Photos from './photos';
+import Photos from './marriagePhotos';
 import './App.css';
 
 function App() {
