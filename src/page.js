@@ -13,7 +13,7 @@ export default function Page() {
 
   return (
     <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50 text-white">
+      <header id="top" className="absolute inset-x-0 top-0 z-50 text-white">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
          
           <div className="flex lg:flex-1 text-2xl">
@@ -45,12 +45,12 @@ export default function Page() {
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <div className="-m-1.5 p-1.5">
+              <a href="#top" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                 <div className="flex lg:flex-1 text-2xl">
           H+S
         </div>
-              </div>
+              </a>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
@@ -113,13 +113,13 @@ export default function Page() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="https://www.amazon.com/Hatched-RED-Blue-Complete-Skateboard/dp/B08XMZ9CMH/ref=asc_df_B08XMZ9CMH/?tag=hyprod-20&linkCode=df0&hvadid=532261485093&hvpos=&hvnetw=g&hvrand=6132385942515710776&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9029925&hvtargid=pla-1461041216569&mcid=fb62b310eecb3d89a05a503e4b8da665&gclid=CjwKCAiA98WrBhAYEiwA2WvhOlB9fCCfchhA739ZUqPF_zNQ6Znp8htc7KircXQTik5phOe5wgCyyxoCFrMQAvD_BwE&th=1&psc=1"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Registry
               </a>
               <a
-                href="#"
+                href="https://venmo.com/"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Venmo
