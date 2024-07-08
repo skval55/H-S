@@ -54,6 +54,13 @@ const features = [
       imageSrc: `${img5}`,
       imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
     },
+    {
+      name: 'Refined details',
+      description:
+        'We design every detail with the best materials and finishes. This laptop sleeve features durable canvas with double-stitched construction, a felt interior, and a high quality zipper that hold up to daily use.',
+      imageSrc: `${img5}`,
+      imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
+    },
   ]
   
   function classNames(...classes) {
@@ -63,9 +70,9 @@ const features = [
   export default function OurStory() {
     return (
       <div className="bg-slate-200">
-        <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
+        <div className="mx-auto max-w-2xl px-4 pb-24 sm:px-6 sm:pb-32 lg:max-w-7xl lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 id='OurStory' className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Story</h2>
+            <h2 id='OurStory' className="text-3xl font-bold pt-10 tracking-tight text-gray-900 sm:text-4xl">Our Story</h2>
             
           </div>
   

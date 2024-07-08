@@ -15,16 +15,16 @@ const images = [img1, img2, img3, img4, img5,img1, img2, img3, img4, img5, img1,
  
  export default function Photos(){
     return (
-        <div id='Photos' className='bg-white pt-20'>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-20">Photos</h2>
- <TabGroup className="flex flex-col-reverse h-screen ">
+        <div id='Photos' className='bg-white pt-7 mt-5 h-[100vh]'>
+            <h2 className="text-3xl mb-5 font-bold tracking-tight text-gray-900 sm:text-4xl ">Photos</h2>
+ <TabGroup className="flex flex-col-reverse justify-between h-[90vh] ">
  {/* Image selector */}
- <div className="mx-auto mt-4 w-full max-w-2xl h-[20vh] overscroll-x-none sm:block lg:max-w-none">
-   <TabList className="mx-auto grid grid-rows-1 max-w-7xl overflow-auto grid-flow-col w-screen">
+ <div className="mx-auto mt-5 w-full max-w-2xl h-[15vh] overscroll-x-none sm:block lg:max-w-none">
+   <TabList className="mx-auto  grid grid-rows-1 max-w-7xl overflow-auto grid-flow-col w-[90vw]">
      {images.map((image) => (
        <Tab
          key={images.indexOf(image)}
-         className="group relative flex h-24 w-24 cursor-pointer  hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
+         className="group relative flex h-24 w-24 cursor-pointer   focus:border-solid focus:border-2 focus:border-sky-500  "
        >
          {/* <span className="sr-only">{image}</span> */}
          <span className="absolute  inset-0 overflow-hidden m-0.5">
@@ -45,7 +45,7 @@ const images = [img1, img2, img3, img4, img5,img1, img2, img3, img4, img5, img1,
        <img
          alt={image.alt}
          src={image}
-         className="h-[80vh] w-full object-cover object-center sm:rounded-lg"
+         className="sm:h-[75vh] w-[97vw] mx-auto sm:w-full object-contain object-center rounded-lg sm:rounded-lg"
        />
      </TabPanel>
    ))}

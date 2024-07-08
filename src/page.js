@@ -1,4 +1,4 @@
-import img from './header.jpeg'
+import img from './OurStoryPhotos/photos/background2.jpeg'
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -88,7 +88,7 @@ export default function Page() {
       <img
           alt=""
           src={img}
-          className="absolute inset-0 -z-20 h-screen w-full object-cover object-bottom"
+          className="absolute inset-0 -z-20 h-screen w-full object-cover object-center"
         />
         <div
           aria-hidden="true"

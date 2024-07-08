@@ -9,8 +9,6 @@ function App() {
       <Page />
       <Photos />
       <OurStory />
-      {/* <Nav />
-      <Header /> */}
     </div>
   );
 }
