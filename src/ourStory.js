@@ -1,4 +1,4 @@
-import img1 from './OurStoryPhotos/1.jpeg'
+// import {img} from './photos'
 import img2 from './OurStoryPhotos/2.jpeg'
 import img3 from './OurStoryPhotos/3.jpeg'
 import img4 from './OurStoryPhotos/4.jpeg'
@@ -23,7 +23,7 @@ const features = [
       name: 'Minimal and thoughtful',
       description:
         'Our laptop sleeve is compact and precisely fits 13" devices. The zipper allows you to access the interior with ease, and the front pouch provides a convenient place for your charger cable.',
-      imageSrc: `${img1}`,
+      imageSrc: `${img2}`,
       imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
     },
     {

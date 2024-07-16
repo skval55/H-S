@@ -5,14 +5,18 @@ import {
     TabPanel,
     TabPanels,
   } from '@headlessui/react'
-  import img1 from './OurStoryPhotos/1.jpeg'
-import img2 from './OurStoryPhotos/2.jpeg'
-import img3 from './OurStoryPhotos/3.jpeg'
-import img4 from './OurStoryPhotos/4.jpeg'
-import img5 from './OurStoryPhotos/5.jpeg'
-
-const images = [img1, img2, img3, img4, img5,img1, img2, img3, img4, img5, img1, img2, img3, img4, img5, img1, img2, img3, img4, img5,  img2, img3, img4, img5, img1, img2, img3, img4, img5]
  
+  function importAll(r) {
+    let images = [];
+    r.keys().forEach(item => { 
+      images.push(r(item)); 
+    });
+    return images;
+  }
+  
+  const images = importAll(require.context('./marriagePhotos', false, /\.(JPG|jpeg)$/));
+  
+
  export default function Photos(){
     return (
         <div id='Photos' className='bg-white pt-7 mt-5 h-[100vh]'>
@@ -20,27 +24,28 @@ const images = [img1, img2, img3, img4, img5,img1, img2, img3, img4, img5, img1,
  <TabGroup className="flex flex-col-reverse justify-between h-[90vh] ">
  {/* Image selector */}
  <div className="mx-auto mt-5 w-full max-w-2xl h-[15vh] overscroll-x-none sm:block lg:max-w-none">
-   <TabList className="mx-auto  grid grid-rows-1 max-w-7xl overflow-auto grid-flow-col w-[90vw]">
-     {images.map((image) => (
+   <TabList  className="mx-auto  grid grid-rows-1 max-w-7xl overflow-auto grid-flow-col w-[90vw]">
+    {images.map((image) => (
        <Tab
-         key={images.indexOf(image)}
-         className="group relative flex h-24 w-24 cursor-pointer   focus:border-solid focus:border-2 focus:border-sky-500  "
+        key={images.indexOf(image)}
+         
+         className="group relative flex h-24 w-24 cursor-pointer    "
        >
-         {/* <span className="sr-only">{image}</span> */}
-         <span className="absolute  inset-0 overflow-hidden m-0.5">
-           <img alt="halli" src={image} className="h-full w-full object-cover object-center" />
+         <span className="sr-only">{image}</span> 
+         <span className="absolute  inset-0 overflow-hidden p-0.5">
+            <img alt="halli" src={image} className="h-full w-full object-cover object-center focus:border focus:border-black focus:border-solid" /> 
          </span>
-         {/* <span
+         <span
            aria-hidden="true"
-           className="pointer-events-none absolute inset-0 rounded-md ring-2 ring-transparent ring-offset-2 group-data-[selected]:ring-indigo-500"
-         /> */}
+           className=" absolute inset-0 "
+         /> 
        </Tab>
-     ))}
+      ))} 
    </TabList>
  </div>
 
  <TabPanels className="aspect-h-1 m-auto aspect-w-1">
-   {images.map((image) => (
+    {images.map((image) => (
      <TabPanel key={images.indexOf(image)}>
        <img
          alt={image.alt}
