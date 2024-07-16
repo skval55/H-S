@@ -19,12 +19,13 @@ import {
 
  export default function Photos(){
     return (
-        <div id='Photos' className='bg-white pt-7 mt-5 h-[100vh]'>
-            <h2 className="text-3xl mb-5 font-bold tracking-tight text-gray-900 sm:text-4xl ">Photos</h2>
+        <div id='Photos' className='bg-white pt-7 sm:mt-10 h-[100vh]'>
+            <h2 className="text-3xl my-5 sm:mt-0 font-bold tracking-tight text-gray-900 sm:text-4xl ">Photos</h2>
  <TabGroup className="flex flex-col-reverse justify-between h-[90vh] ">
  {/* Image selector */}
+ <div className='w-screen bg-white pb-3 sm:pb-0'>
  <div className="mx-auto mt-5 w-full max-w-2xl h-[15vh] overscroll-x-none sm:block lg:max-w-none">
-   <TabList  className="mx-auto  grid grid-rows-1 max-w-7xl overflow-auto grid-flow-col w-[90vw]">
+   <TabList  className="mx-auto   grid grid-rows-1 max-w-7xl overflow-auto grid-flow-col w-[90vw]">
     {images.map((image) => (
        <Tab
         key={images.indexOf(image)}
@@ -43,14 +44,14 @@ import {
       ))} 
    </TabList>
  </div>
-
+ </div>
  <TabPanels className="aspect-h-1 m-auto aspect-w-1">
     {images.map((image) => (
      <TabPanel key={images.indexOf(image)}>
        <img
          alt={image.alt}
          src={image}
-         className="sm:h-[75vh] w-[97vw] mx-auto sm:w-full object-contain object-center rounded-lg sm:rounded-lg"
+         className="max-h-[70vh] max-w-[97vw] mx-auto sm:w-full object-contain object-center rounded-lg sm:rounded-lg"
        />
      </TabPanel>
    ))}

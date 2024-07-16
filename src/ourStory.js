@@ -69,7 +69,7 @@ const features = [
   
   export default function OurStory() {
     return (
-      <div className="bg-slate-200">
+      <div className="bg-slate-200 pt-10">
         <div className="mx-auto max-w-2xl px-4 pb-24 sm:px-6 sm:pb-32 lg:max-w-7xl lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 id='OurStory' className="text-3xl font-bold pt-10 tracking-tight text-gray-900 sm:text-4xl">Our Story</h2>

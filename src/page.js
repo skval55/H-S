@@ -67,6 +67,9 @@ export default function Page() {
                     <a
                       key={item.name}
                       href={item.href}
+                      onClick={() => {
+                        setMobileMenuOpen(false)
+                      }}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
@@ -102,9 +105,9 @@ export default function Page() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div> */}
-        <div className="mx-auto  max-w-2xl z-20 h-[calc(100vh-80px)] flex flex-col justify-end  mt-20 sm:mt-0">
+        <div className="mx-auto  max-w-2xl z-20 h-[calc(100vh-80px)] flex flex-col justify-end   sm:mt-0">
           
-          <div className="text-center sm:mb-[100px] mb-[200px]">
+          <div className="text-center sm:mb-[100px] mb-[100px]">
             <h1 className="text-4xl font-bold tracking-tight text-gray-300 sm:text-6xl">
          Halli and Samuel Valadez
             </h1>
